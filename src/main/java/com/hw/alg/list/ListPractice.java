@@ -8,17 +8,27 @@ package com.hw.alg.list;
 public class ListPractice {
 
     public static void main(String[] args) {
-        //1.测试isLoop方法
-        //构造单链表
-        SingleNode<String> nodeA = new SingleNode<>("A", null);
-        SingleNode<String> nodeB = new SingleNode<>("B", null);
-        SingleNode<String> nodeC = new SingleNode<>("C", null);
-        SingleNode<String> nodeD = new SingleNode<>("D", null);
-        nodeA.next = nodeB;
-        nodeB.next = nodeC;
-        nodeC.next = nodeD;
-        nodeD.next = nodeB; //环
-        System.out.println(isLoop(nodeA));
+        //环形单链表，A1-B1-C1-D1-A1
+        SingleNode<String> nodeA1 = new SingleNode<>("A", null);
+        SingleNode<String> nodeB1 = new SingleNode<>("B", null);
+        SingleNode<String> nodeC1 = new SingleNode<>("C", null);
+        SingleNode<String> nodeD1 = new SingleNode<>("D", null);
+        nodeA1.next = nodeB1;
+        nodeB1.next = nodeC1;
+        nodeC1.next = nodeD1;
+        nodeD1.next = nodeA1;
+        System.out.println(isLoop(nodeA1));
+        
+        //非环形单链表,A2-B2-C2-D2
+        SingleNode<String> nodeA2 = new SingleNode<>("A", null);
+        SingleNode<String> nodeB2 = new SingleNode<>("B", null);
+        SingleNode<String> nodeC2 = new SingleNode<>("C", null);
+        SingleNode<String> nodeD2 = new SingleNode<>("D", null);
+        nodeA2.next = nodeB2;
+        nodeB2.next = nodeC2;
+        nodeC2.next = nodeD2;
+        System.out.println(isLoop(nodeA2));
+        
     }
 
 

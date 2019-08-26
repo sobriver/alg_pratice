@@ -8,7 +8,7 @@ package com.hw.alg.string;
 public class StringTest {
 
     public static void main(String[] args) {
-        System.out.println(reverse("huaasd"));
+        System.out.println(string2Int("jloj762jf89J0"));
     }
 
 
@@ -20,6 +20,23 @@ public class StringTest {
     static String reverse(String s){
         if (s.length() <= 1) return s;
         return reverse(s.substring(1)) + s.charAt(0);
+    }
+
+    /**
+     * 将一个String转化为int
+     */
+    static int string2Int(String s){
+        int len = s.length();
+
+        int result = 0;
+        for (int i=0; i < len; i++){
+            int c = Character.digit(s.charAt(i), 10);
+            if (c <= 9 && c >= 0){
+                result = result * 10 + c;
+            }
+        }
+        return result;
+
     }
 
 }

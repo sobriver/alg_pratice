@@ -1,4 +1,5 @@
-package com.hw.alg.other;
+
+package com.hw.other;
 
 
 /**
@@ -7,12 +8,17 @@ package com.hw.alg.other;
 public class FinalTest {
 
     public static void main(String[] args) {
+
+        String tar = "acc_release_1.0.2.apk";
+        String re = "acc_release_[0-9]\\.[0-9]\\.[0-9]\\.apk";
+        System.out.println(tar.matches(re));
+
         /**
          * 此例说明两点:
          * 1. 即使使用了return语句,finally内部的逻辑仍然执行
          * 2. 第一个return的地方就是函数的真正返回值
          */
-        System.out.println(getInt());
+//        System.out.println(getInt());
     }
 
 

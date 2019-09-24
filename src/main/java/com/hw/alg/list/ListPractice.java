@@ -1,7 +1,6 @@
 package com.hw.alg.list;
 import java.util.List;
 import com.hw.alg.list.NodeList.SNode;
-import javafx.scene.SnapshotParameters;
 
 /**
  * @author hw
@@ -171,6 +170,17 @@ public class ListPractice {
         head.next = null;
         //返回的
         return pre;
+    }
+
+
+    /**
+     * 题目:判断两个链表是否相交
+     * 思路: 需要考虑链表是否有环的情况
+     * (1) 当两个链表都没有环时,判断两个链表的尾部元素是否相同,若相同,则相交,思路
+     * (2) 当两个链表都有环时,若相交的话.交点要么在环上,要么在环外
+     */
+    static boolean isJoin(SNode node1, SNode node2){
+        return false;
     }
 
 

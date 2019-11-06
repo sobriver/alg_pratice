@@ -1,5 +1,5 @@
 package com.hw.jzoffer;
-public class Question3 {
+public class Q3 {
     /**
      * 题目: 找出数组中重复的数字
      * 在一个长度为n的数组中所有数字都在0到n-1的范围内,数组中某些项是重复的,请找出数组中任意一个重复的数字,若无重复项,返回-1

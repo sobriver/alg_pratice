@@ -18,10 +18,8 @@ public class ListPractice {
         nodeB.next = nodeC;
 
         SNode head = reverse(nodeA);
+        System.out.println("head.calue" + head.data);
         print(head);
-
-
-
 
     }
 
@@ -153,9 +151,9 @@ public class ListPractice {
         if (head == null)
             return null;
 
-        SNode pre = head;//当前节点的上一节点
-        SNode current = head.next; //当前节点
-        SNode temp = null;
+        SNode pre = null;//当前节点的上一节点
+        SNode current = head; //当前节点
+        SNode reverseHead =
 
         while (current != null){
             //1.缓存当前节点的下一个节点

@@ -17,8 +17,7 @@ public class ListPractice {
         nodeA.next = nodeB;
         nodeB.next = nodeC;
 
-        SNode head = reverse(nodeA);
-        System.out.println("head.calue" + head.data);
+        SNode head = reverse1(nodeA);
         print(head);
 
     }
@@ -141,33 +140,37 @@ public class ListPractice {
         return head;
     }
 
+
     /**
-     * 反转链表
-     * 思路：将当前节点的下一个节点首先缓存起来，然后将当前节点的上一个节点变为当前节点的下一个节点（反转），最后再将当前节点和上一个节点的指针向后移动一位
-     * todo 注意：此处的当前节点是从第二个节点开始算起
-     * @return 返回反转后链表的头
+     * 反转链表,返回反转后链表的头
+     * 解析: 因为要反转链表,所以需要知道当前结点的前一个节点,但因为是单链表,所以无法直接获得.
+     * 可以先将当前结点的前一个结点缓存起来再使用
+     * @param head
+     * @return
      */
-    static SNode reverse(SNode head){
+    static SNode reverse1(SNode head){
         if (head == null)
             return null;
 
+        //注意初始的设置
         SNode pre = null;//当前节点的上一节点
         SNode current = head; //当前节点
-        SNode reverseHead =
+        SNode reverseHead = null; //反转后的链表头结点
 
         while (current != null){
-            //1.缓存当前节点的下一个节点
-            temp = current.next;
-            //2.反转当前节点
+            SNode next = current.next;
+            //反转后链表的头结点一定是反转之前链表的尾结点
+            if (next == null)
+                reverseHead = current;
+
+            //此处需要将当前结点指向的前一个结点和后一个结点交换位置
             current.next = pre;
-            //3.移动当前节点和上一节点指针
-            current = temp;
             pre = current;
+
+            //继续遍历下一个结点
+            current = next;
         }
-        //此处要设置最后一个节点(即反转前的第一个节点）指向为null
-        head.next = null;
-        //返回的
-        return pre;
+        return reverseHead;
     }
 
 

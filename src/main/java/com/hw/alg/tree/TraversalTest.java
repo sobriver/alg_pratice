@@ -1,5 +1,7 @@
 package com.hw.alg.tree;
 
+import com.hw.base.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -53,6 +55,9 @@ public class TraversalTest {
      * 前序遍历: 先遍历根节点,再遍历左节点,最后遍历右节点
      * 输出如下: 6 2 0 1 4 5 8 9
      * 下面是递归写法
+     * 递归函数: 前序遍历打印以node为根节点的二叉树
+     * 递归终止: node为null
+     * 递归表达式:
      */
     public static void preTraversal1(TreeNode node){
         if (node == null)

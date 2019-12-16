@@ -1,6 +1,8 @@
-package com.hw.base;
+package com.hw.alg.base;
 
-
+/**
+ * 链表工具类
+ */
 public class ListUtils {
 
     public static void main(String[] args) {

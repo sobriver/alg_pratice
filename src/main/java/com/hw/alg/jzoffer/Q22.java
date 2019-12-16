@@ -1,4 +1,4 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 
 /**
  * 求链表倒数第k个节点,k从1开始计数

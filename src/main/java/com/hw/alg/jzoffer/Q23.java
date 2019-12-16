@@ -1,4 +1,4 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 
 /**
  * 如果一个链表中包含环,找出环的入口节点

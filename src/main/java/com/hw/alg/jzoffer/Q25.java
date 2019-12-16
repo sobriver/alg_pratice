@@ -1,8 +1,8 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 
 
-import com.hw.base.ListUtils;
-import com.hw.base.Node;
+import com.hw.alg.base.ListUtils;
+import com.hw.alg.base.Node;
 
 public class Q25 {
 

@@ -1,4 +1,4 @@
-package com.hw.base;
+package com.hw.alg.base;
 
 import java.util.LinkedList;
 import java.util.Queue;

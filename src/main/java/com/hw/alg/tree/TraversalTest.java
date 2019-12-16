@@ -1,6 +1,6 @@
 package com.hw.alg.tree;
 
-import com.hw.base.TreeNode;
+import com.hw.alg.base.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,4 +1,4 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 
 /**
  * 裴波拉起数列

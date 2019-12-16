@@ -1,4 +1,4 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 
 public class Q18 {
 

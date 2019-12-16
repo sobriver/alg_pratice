@@ -1,6 +1,6 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 
-import com.hw.base.TreeNode;
+import com.hw.alg.base.TreeNode;
 
 /**
  * 题目: 判断二叉树B是否是二叉树A的子树

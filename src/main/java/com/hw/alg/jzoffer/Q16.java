@@ -1,4 +1,4 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 
 /**
  * 求数值的整数次方

@@ -1,6 +1,6 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 
-import com.hw.base.TreeNode;
+import com.hw.alg.base.TreeNode;
 
 import java.util.Stack;
 

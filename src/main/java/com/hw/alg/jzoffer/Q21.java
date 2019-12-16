@@ -1,6 +1,5 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Q21 {

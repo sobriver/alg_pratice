@@ -1,8 +1,8 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 
 
-import com.hw.base.TreeNode;
-import com.hw.base.TreeUtils;
+import com.hw.alg.base.TreeNode;
+import com.hw.alg.base.TreeUtils;
 
 /**
  * 求一棵二叉树的镜像

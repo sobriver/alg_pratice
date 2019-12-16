@@ -1,4 +1,4 @@
-package com.hw.jzoffer;
+package com.hw.alg.jzoffer;
 public class Q3 {
     /**
      * 题目: 找出数组中重复的数字

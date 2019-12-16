@@ -1,4 +1,4 @@
-package com.hw.base;
+package com.hw.alg.base;
 
 /**
  * 单链表节点
